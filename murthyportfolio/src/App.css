@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-header{
+  display: flex;
+  align-items: center;
+}
+
+nav .active{
+  color: red;
+}
+
+nav a:hover{
+  color: green;
+}
+
+.gradImg{
+  margin-left: 30px;
+  background-color: red;
+  width: auto;
+  height: 40px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.info-class{
+
+  background-color: rgba(212, 232, 237, 0.515);
+  height: 500px;
+  width: 100vw;
+
+}

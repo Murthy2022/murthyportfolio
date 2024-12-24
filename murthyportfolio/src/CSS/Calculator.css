@@ -1,0 +1,28 @@
+.buttons_container{
+    margin-left: 550px ;
+    margin-top: 100px;
+    /* background-color: cyan; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 320px;
+      
+}
+
+.button{
+    border-radius: 12px;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 10px 20px; 
+    color: white;
+    background-color: rgb(235, 22, 22);
+}
+
+.inputBox{
+    margin: 50px 100px 10px 100px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black
+}
