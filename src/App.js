@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Overview from './Components/Overview.js';
 import Calculator from './Components/Calculator';
-import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import { Routes , Route } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Memories from './Components/Memories.js';
 import Onboard from './Components/Onboard.js';
@@ -12,6 +12,10 @@ import { useState } from 'react';
 import { DataContext } from './Components/Contexts.js';
 import Home from './Components/Home.js'
 import Weather from './Components/Weather.js';
+import Mobiles from './Components/Mobiles.js';
+import Laptops from './Components/Laptops.js';
+import TV from './Components/TV.js';
+
 
 function App() {
 
@@ -25,12 +29,16 @@ function App() {
       <Navigation />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='overview' element={<Overview />} />
-        <Route path='calculator' element={<Calculator />} />
-        <Route path='onboard' element={<Onboard />} />
-        <Route path='projects' element={<Projects />}/>
-        <Route path='memories' element={<Memories/>}/>
-        <Route path='weather' element={<Weather />}/>
+        <Route path='/overview' element={<Overview />} />
+        <Route path='/calculator' element={<Calculator />} />
+        <Route path='/onboard' element={<Onboard />} />
+        <Route path='/projects' element={<Projects />}>
+          <Route path='mobiles' element={<Mobiles />}/>
+          <Route path='laptops' element={<Laptops />}/>
+          <Route path='tvs' element={<TV />}/>
+        </Route>
+        <Route path='/memories' element={<Memories />}/>
+        <Route path='/weather' element={<Weather />}/>
       </Routes>
       </DataContext.Provider>
     </div>
