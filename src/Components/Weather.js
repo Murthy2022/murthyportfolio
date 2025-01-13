@@ -57,7 +57,7 @@ if (error){
     <>
     <div className="weather-box">
     <h1>Weather</h1>
-    <input className='weather-inpt' type="text" placeholder='Enter the city you want to weather info' onChange={(e) => setCity(e.target.value)}/>
+    <input className='weather-inpt' type="text" placeholder='Enter the city name you want to weather info' onChange={(e) => setCity(e.target.value)}/>
     <button className='get-wther-name-btn' onClick={getWether}>Get Weather Details</button>
     <h3>Min Temp : {minTemp}&deg;C</h3>
     <h3>Max Temp : {maxTemp}&deg;C</h3>
