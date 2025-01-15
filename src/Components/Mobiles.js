@@ -1,5 +1,6 @@
 import React from 'react'
 import GadgetComponent from './GadgetComponent'
+import { MobileData } from '../Data/MobileData'
 
 
 export default function Mobiles() {
@@ -7,7 +8,7 @@ export default function Mobiles() {
   return (
     <div>
       <p>In Mobile Section</p>
-      <GadgetComponent />
+      <GadgetComponent Data={MobileData} />
     </div>
   )
 }

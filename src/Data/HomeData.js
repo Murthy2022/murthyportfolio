@@ -11,6 +11,4 @@ const PersonDetails = {
     MobileNumber : ""
 }
 
-
-
 export default PersonDetails

@@ -206,7 +206,8 @@ color : white
 }
 
 .Gadget-component{
-  background-color: #f0e7b0;
+  background-color: #f2f1e9;
   display: flex; 
+  flex-wrap: wrap;
   border-radius: 30px;
 }

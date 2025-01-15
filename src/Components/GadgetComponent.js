@@ -1,26 +1,10 @@
 import React from 'react'
 
-const GadgetComponent = () => {
-
-const MobileData = [
-    {
-        name : 'Samsung',
-        img : 'https://images.samsung.com/is/image/samsung/p6pim/sa_en/2401/gallery/sa-en-galaxy-s24-s928-sm-s928bztcmea-539325245?$684_547_JPG$',
-        cost : 10000
-    },
-    {
-        name : 'iPhone',
-        img : 'https://images.indianexpress.com/2024/07/iphone-17-slim.jpg',
-        cost : 20000
-    }
-]
-
-
-
+//const GadgetComponent = ( {Data} ) => {
+const GadgetComponent = ( props ) => {
     return(
         <div className='Gadget-component'>
-        
-            {MobileData.map((e,index) => {
+            {props.Data.map((e,index) => {
                 return (
                 <div className='item-container'>
                 <h4 className='item-name' key={index}>{e.name}</h4>
