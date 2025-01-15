@@ -29,7 +29,7 @@ const Overview = ( { PersonDetails } ) => {
 
       <div>
         <p>Plese login to view this page</p>
-        <a href="http://localhost:3000/">Click here</a>
+        <a href="https://murthyproject.vercel.app/">Click here</a>
       </div>
 
   );
