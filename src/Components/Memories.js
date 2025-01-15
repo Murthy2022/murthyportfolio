@@ -18,7 +18,6 @@ const Memories = () => {
       <p>Plese login to view this page</p>
       <a href="https://murthyproject.vercel.app/">Click here</a>
     </div>
-
     );
   };
   

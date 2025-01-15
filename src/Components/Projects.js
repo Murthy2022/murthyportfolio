@@ -1,6 +1,5 @@
 import React from 'react'
-import { Routes , Route, Outlet } from 'react-router-dom'
-import Mobiles from './Mobiles'
+import { Outlet } from 'react-router-dom'
 import CartNavigation from './CartNavigation'
 
 export default function Projects() {

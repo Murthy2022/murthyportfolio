@@ -150,3 +150,63 @@ nav a:hover{
   margin-left: 70px;
   
 }
+
+.item-container{
+  background-color: rgb(106, 225, 175);
+  margin: 30px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 30px;
+  
+}
+
+.item-name{
+  position: absolute;
+  top : 10px;
+  left: 70px;
+
+}
+
+.item-image{
+  top : 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 70px;
+}
+
+.item-cost{
+  position: absolute;
+  top : 160px;
+  left : 70px
+
+}
+
+.add-cart-btn{
+
+position :absolute;
+top : 190px;
+width: 100px;
+left : 30px;
+border-radius: 10px;
+background-color: black;
+color : white
+
+}
+
+.buy-now-btn{
+  position :absolute;
+  top : 190px;
+  left : 140px;
+  border-radius: 10px;
+  background-color: black;
+  color : white
+
+}
+
+.Gadget-component{
+  background-color: #f0e7b0;
+  display: flex; 
+  border-radius: 30px;
+}
