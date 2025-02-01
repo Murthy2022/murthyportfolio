@@ -6,7 +6,7 @@ export default function Laptops() {
   return (
     <div>
       <p>In LapTop section</p>
-      <GadgetComponent Data={LaptopData}/>
+      <GadgetComponent data={LaptopData} category="Laptops"/>
     </div>
   )
 }

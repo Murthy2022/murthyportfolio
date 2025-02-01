@@ -6,7 +6,7 @@ export default function TV() {
   return (
     <div>
       <p>In TV Section</p>
-      <GadgetComponent Data={TVData}/>
-    </div>
+      <GadgetComponent data={TVData} category="TV"/>
+    </div> 
   )
 }

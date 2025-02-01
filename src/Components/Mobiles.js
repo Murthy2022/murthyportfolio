@@ -8,7 +8,7 @@ export default function Mobiles() {
   return (
     <div>
       <p>In Mobile Section</p>
-      <GadgetComponent Data={MobileData} />
+      <GadgetComponent data={MobileData} category="Mobiles"/>
     </div>
   )
 }
