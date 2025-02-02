@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <DataContext.Provider value={{ data , setData , auth , setAuth , btnText , setBtnTxt}}>
-      <CartContext.Provider value={ { cartItem }}>
+      <CartContext.Provider value={ { cartItem , setCartItem}}>
       <Navigation />
       <Routes>
         <Route path='/' element={<Home />} />

@@ -154,7 +154,7 @@ nav a:hover{
 }
 
 .item-container{
-  background-color: rgb(106, 225, 175);
+  background-color: rgb(241, 231, 232);
   margin: 30px;
   width: 250px;
   height: 250px;
@@ -208,7 +208,7 @@ color : white
 }
 
 .Gadget-component{
-  background-color: #f2f1e9;
+  background-color: #bbe8f5;
   display: flex; 
   flex-wrap: wrap;
   border-radius: 30px;
@@ -242,4 +242,15 @@ color : white
   height: 20px;
   width: 100px;
 
+}
+
+.cart-heading{
+  background-color: rgb(250, 233, 203);
+  height: 30px;
+  width: 500px;
+  border-radius: 5px;
+  margin-left: 180px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 2px;
 }

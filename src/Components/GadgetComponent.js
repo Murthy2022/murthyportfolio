@@ -1,32 +1,48 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from './Contexts'
+import Notification from './Notification'
 
 //const GadgetComponent = ( {Data} ) => {
 const GadgetComponent = ( props ) => {
 
     var { cartItem } = useContext(CartContext)
+    const [notification , setNotification] = useState(false)
+    const [notificationStatus,setNotificationStatus] = useState(false)
+    const [notificationMessage,setNotificationMessage] = useState('')
+
 
 
     const handleAddCart = (item,category) => {
+        let timer;
         console.log('Clicked Handle Cart')
         console.log(item)
         console.log(category)
         console.log("Cart Item")
         console.log(cartItem)
-
-
         const newCartItem = {
             id : item.id,
             name : item.name,
             img : item.img,
             cost : item.cost
-
         }
+        try {
+            cartItem.push(newCartItem)
+            setNotification(true)
+            setNotificationStatus(true)
+            setNotificationMessage('Item Added sucessfully!!!!')
+            setTimeout(() => {
+                setNotification(false)
+            }, 5000);
 
-
-        cartItem.push(newCartItem)
-
-
+        } catch (error) {
+            setNotification(true)
+            setNotificationStatus(false)
+            setNotificationMessage('Item Not added')
+            setTimeout(() => {
+                setNotification(false)
+            }, 5000);
+            
+        }
     }
 
     const handleBuyNow = (item,category) => {
@@ -50,6 +66,7 @@ const GadgetComponent = ( props ) => {
                 </div>
                 )
             })}
+            {notification ? <Notification status={notificationStatus} message={notificationMessage} /> : ''}
         
         </div>
     )
